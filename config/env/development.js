@@ -20,7 +20,7 @@ module.exports = {
 
 	models: {
 	  connection: 'postgresDev'
-
+	},
 	// models: {
 	//   connection: 'someMongodbServer'
 	// }

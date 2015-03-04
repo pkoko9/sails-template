@@ -13,7 +13,35 @@
  * always omit, customize, or replace this behavior with SASS, SCSS,
  * or any other Grunt tasks you like.)
  */
-.test {
-  color: blue; }
+/*
+// For example:
+//
+// @import 'variables/colors.scss';
+// @import 'mixins/foo.scss';
+// @import 'mixins/bar.scss';
+// @import 'mixins/baz.scss';
+//
+// @import 'styleguide.scss';
+// @import 'pages/login.scss';
+// @import 'pages/signup.scss';
+//
+// etc.*/
+h1 {
+  color: red; }
+
+.form {
+  height: 20em;
+  background-color: blue; }
+
+.form {
+  width: 25em;
+  background-color: white;
+  font-size: 16px;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-bottom: 4em;
+  /*	max-width: 500px;*/
+  padding: 25px 15px 25px 10px;
+  border: 5px solid balck; }
 
 /*# sourceMappingURL=importer.css.map */

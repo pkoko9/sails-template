@@ -15,7 +15,7 @@
  */
 
 
-
+/*
 // For example:
 //
 // @import 'variables/colors.scss';
@@ -27,8 +27,10 @@
 // @import 'pages/login.scss';
 // @import 'pages/signup.scss';
 //
-// etc.
+// etc.*/
 
-.test {
-	color: blue;
-}
+@import 'homepage.scss';
+@import 'loginpage.scss';
+@import 'registerpage.scss';
+
+
