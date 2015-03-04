@@ -12,39 +12,36 @@ angular.module('app.controllers', [])
 	$scope.emailFail = false;
 	$scope.pwFail = false;
 
-
-	$scope.emailInput = function (email) {
+	$scope.login = function(email, password) {
 		var input1 = validator.isEmail(email);
 		console.log (input1);
-		if (input1 === true) {
+		if (input1) {
 			correctEmail = true;
 			// $scope.emailFail = false;
 		} else {
 				$scope.emailFail = true;
 				// correctEmail = false;
-		}		
+		}
 
-	}
-
-	$scope.pwInput = function (password) {
 		var input2 = !validator.isNull(password);
 		console.log (input2);
-		if (input2 === true) {
-			// $scope.pwFail = false;
+		if (input2) {
+			$scope.pwFail = false;
 			correctPW = true;
 		}
 			else {
 				$scope.pwFail = false;
-				// correctPW= false;
+				correctPW= false;
 			}
-	}
 
-	$scope.login = function(email, password) {
 		if(correctEmail && correctPW) {
 			loginInput = {
 				identifier: email,
 				password: password
 			};
+
+			$scope.email='';
+			$scope.password='';
 		}
 		console.log(loginInput);
 	};
@@ -60,23 +57,21 @@ angular.module('app.controllers', [])
 	$scope.pwFail = false;
 
 
-	$scope.emailInput = function (email) {
+	$scope.login = function(email, password) {
+		
 		var input1 = validator.isEmail(email);
-		// console.log (input1);
-		if (input1 === true) {
+		console.log (input1);
+		if (input1) {
 			correctEmail = true;
 			// $scope.emailFail = false;
 		} else {
 				$scope.emailFail = true;
 				// correctEmail = false;
-		}		
+		}
 
-	}
-
-	$scope.pwInput = function (password) {
 		var input2 = !validator.isNull(password);
-		// console.log (input2);
-		if (input2 === true) {
+		console.log (input2);
+		if (input2) {
 			// $scope.pwFail = false;
 			correctPW = true;
 		}
@@ -84,9 +79,7 @@ angular.module('app.controllers', [])
 				$scope.pwFail = true;
 				// correctPW= false;
 			}
-	}
 
-	$scope.login = function(email, password) {
 		if(correctEmail && correctPW) {
 			registerInput = {
 				username: email,
@@ -94,12 +87,10 @@ angular.module('app.controllers', [])
 				password: password
 			};
 
-		$scope.emailInput='';
-		$scope.pwInput='';
+		$scope.email='';
+		$scope.password='';
 		}
 		console.log(registerInput);
-
-
 	}
 })
 
