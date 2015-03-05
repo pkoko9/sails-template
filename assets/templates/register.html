@@ -17,8 +17,12 @@
 		<button type="submit">Submit</button>
 	</form>
 
-	<span ng-show = "pwFail">Please enter a password</span><br>
-	<span ng-show = "emailFail">Please enter a valid email address</span>
-	
+		<span ng-show = "pwFail">Please enter a password</span><br>
+		<span ng-show = "emailFail">Please enter a valid email address</span>
 
+	<div class='RegisterStatusMessages'>
+		<span ng-show = "registerSuccess">Congratulations!  You have successfully registered!</span>
+		<span ng-repeat = "error in registerFailure">{{ error }}</span>
+	</div>
+	
 </div>

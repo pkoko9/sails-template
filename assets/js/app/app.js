@@ -2,7 +2,7 @@ angular.module('app', ['app.controllers', 'ui.router'])
 .config(function($stateProvider) {
 	$stateProvider
 	.state('home', {
-		url: '/home',
+		url: '/home/:success',
 		templateUrl:'templates/home.html',
 		controller: 'homeCTRL'
 	})

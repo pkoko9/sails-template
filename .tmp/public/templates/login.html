@@ -19,8 +19,13 @@
 		<button type="submit">Submit</button>
 	</form>
 
-	<span ng-show = "pwFail">Please enter a password</span><br>
-	<span ng-show = "emailFail">Please enter a valid email address</span>
-	
+	<div class='failMessages'>
+		<span ng-show = "pwFail">Please enter a password</span><br>
+		<span ng-show = "emailFail">Please enter a valid email address</span>
+	</div>
 
-</div>
+	<div class='logInSuccessMessage'>
+		<span ng-show = "loginSuccess">Congratulations!  You have successfully logged in!</span>
+		<span ng-repeat = "error in loginFailure">{{ error }}</span>
+
+	</div>
