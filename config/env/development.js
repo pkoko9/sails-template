@@ -18,17 +18,17 @@ module.exports = {
 	***************************************************************************/
 
 
-	models: {
-	  connection: 'postgresDev'
-	},
-	// models: {
-	//   connection: 'someMongodbServer'
-	// }
-	paths: {
-		default: {
-			tmpdir: 'www'
-		}
+// 	models: {
+// 	  connection: 'postgresDev'
+// 	},
+// 	// models: {
+// 	//   connection: 'someMongodbServer'
+// 	// }
+// 	paths: {
+// 		default: {
+// 			tmpdir: 'www'
+// 		}
 
-	}
+// 	}
 
 };
