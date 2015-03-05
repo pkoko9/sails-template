@@ -17,6 +17,6 @@ angular.module('app', ['app.controllers', 'ui.router'])
 		controller: 'registerCTRL'
 	});
 
-	$urlRouterProvider.otherwise('/home');
+	$urlRouterProvider.otherwise('/login');
 
 });
