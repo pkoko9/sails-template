@@ -1,5 +1,5 @@
 angular.module('app', ['app.controllers', 'ui.router'])
-.config(function($stateProvider) {
+.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 	.state('home', {
 		url: '/home/:success',
@@ -15,6 +15,8 @@ angular.module('app', ['app.controllers', 'ui.router'])
 		url: '/register',
 		templateUrl:'templates/register.html',
 		controller: 'registerCTRL'
-	})
+	});
 
-})
+	$urlRouterProvider.otherwise('/home');
+
+});
